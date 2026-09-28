@@ -1,0 +1,14 @@
+---
+const links = [
+  { href: '/', label: 'Home' },
+  { href: '/contact/', label: 'Contact' },
+];
+---
+<header>
+  <div class="container">
+    <a class="brand" href="/">Hilton Tutor</a>
+    <nav>
+      {links.map((l) => <a href={l.href}>{l.label}</a>)}
+    </nav>
+  </div>
+</header>
