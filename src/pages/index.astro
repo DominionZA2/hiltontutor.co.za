@@ -1,7 +1,71 @@
 ---
 import Base from '../layouts/Base.astro';
+
+const phone = '076 990 7052';
+const phoneHref = 'tel:+27769907052';
+const email = 'edalexandered@gmail.com';
+const address = '15 Acutt Rd, Hilton';
 ---
 <Base>
-  <h1>Hilton Tutor</h1>
-  <p>Our new website is on its way. Please check back soon.</p>
+  <div class="hero">
+    <div class="hero-text">
+      <h1>Maths Tutor <span>Ed Alexander</span></h1>
+      <div class="tagline">Giving your children the help they need</div>
+      <div class="hero-cta">
+        <a class="btn btn-primary" href={phoneHref}>Call {phone}</a>
+        <a class="btn btn-secondary" href="#lessons">Lessons &amp; fees</a>
+      </div>
+    </div>
+    <div class="hero-photo">
+      <img src="/ed-alexander.jpg" alt="Ed Alexander, maths tutor" width="382" height="397" />
+    </div>
+  </div>
+
+  <section class="block" id="about">
+    <div class="container">
+      <h2>About</h2>
+      <p>
+        I currently help about 10 Laddsworth children improve their Maths. I am kind and create a warm
+        atmosphere. I focus on the areas where the children need the help.
+      </p>
+      <p>
+        I guarantee that your child will improve, because all the children who come to me improve.
+      </p>
+    </div>
+  </section>
+
+  <section class="block" id="lessons">
+    <div class="container">
+      <h2>Lessons &amp; fees</h2>
+      <div class="grid-2">
+        <div class="card">
+          <p class="price">R1 200 <small>per month</small></p>
+          <ul class="plain">
+            <li>4 lessons per month</li>
+            <li>Each lesson is 45 minutes</li>
+            <li>Payable upfront</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Good to know</h3>
+          <ul class="plain">
+            <li>Agreed lesson times and locations are strictly kept, so you get value for money.</li>
+            <li>Any changes must be communicated at least 6 hours before the lesson, otherwise the full lesson is charged.</li>
+            <li>Please provide all stationery before the lessons start.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="block" id="contact">
+    <div class="container">
+      <h2>Contact</h2>
+      <ul class="contact-list">
+        <li><strong>Phone</strong><a href={phoneHref}>{phone}</a></li>
+        <li><strong>Email</strong><a href={`mailto:${email}`}>{email}</a></li>
+        <li><strong>Address</strong>{address}</li>
+      </ul>
+    </div>
+  </section>
 </Base>
