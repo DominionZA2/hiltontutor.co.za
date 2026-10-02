@@ -23,7 +23,7 @@ h1, h2, h3 { font-family: 'Oswald', sans-serif; color: var(--navy); line-height:
 .site-header { background: var(--navy); color: var(--on-navy); }
 .site-header .container { display: flex; justify-content: space-between; align-items: center; gap: 1rem; padding-block: .6rem; flex-wrap: wrap; }
 .brand { display: flex; align-items: center; gap: .75rem; color: var(--on-navy); text-decoration: none; font-family: 'Oswald', sans-serif; font-size: 1.25rem; letter-spacing: .02em; }
-.brand img { height: 48px; width: auto; border-radius: 4px; }
+.brand img { height: 48px; width: 48px; border-radius: 8px; }
 .site-header nav { display: flex; gap: 1.25rem; flex-wrap: wrap; }
 .site-header nav a { color: var(--on-navy); text-decoration: none; font-weight: 700; font-size: .95rem; }
 .site-header nav a:hover { text-decoration: underline; }
